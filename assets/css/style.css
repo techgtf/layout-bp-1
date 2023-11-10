@@ -24,11 +24,14 @@ a:hover{text-decoration: none; outline: none; border: 0; color: inherit;}
 .bannerSlider .carousel-item img{border-radius: 5px;}
 .carousel-control-prev, .carousel-control-next {display: none;}
 .carousel-control-prev {left: inherit;right: 25px;}
-.bannerContentdiv{bottom: 0; z-index: 1; left: 30px;border-bottom: 15px solid var(--blue);}
-.projectname, .bannerHighlights{width: 360px;z-index: 1;padding-left: 16px;margin-bottom: 26px;}
-.bannerHighlights{width: 395px;}
-.projectname::after,.bannerHighlights::after{content: ' ';position: absolute;z-index: -1;left: 0;right: 0;bottom: -16%;clip-path: polygon(1% 64%, 86% 40%, 100% 100%, 0% 100%);background: var(--blue);height: 249px;}
-.bannerHighlights::after{clip-path: polygon(0 55%, 91% 57%, 100% 100%, 0% 100%);background: var(--orange);bottom: -13px;height: 290px;}
+.bannerContentdiv{bottom: 0; z-index: 1; left: 14px;border-bottom: 15px solid var(--blue);}
+.projectname, .bannerHighlights{width: 536px;z-index: 1;padding-left: 16px;margin-bottom: 26px;}
+.bannerHighlights{width: 600px;}
+.projectname::after,.bannerHighlights::after{content: ' ';position: absolute;z-index: -1;left: 0;right: 0;bottom: -16%;clip-path: polygon(0% 64%, 86% 40%, 100% 100%, -1% 100%);background: var(--blue);height: 274px;}
+.bannerHighlights::after{clip-path: polygon(-1% 55%, 91% 56%, 100% 100%, 0% 100%);background: var(--orange);bottom: 6px;height: 269px;}
+.pHeading{font-size: 40px; padding-bottom: 8px;}
+.pAddress{font-size: 18px;}
+.TypoHeading{font-size: 25px;}
 /*Slider And From Codes End From Here*/
 
 /*Overview Codes Start From Here*/
