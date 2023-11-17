@@ -7,6 +7,7 @@
 /*default Css Start Here*/
 body, p, h1, h2, h3, h4, h5, h6, ul, li{margin:0px;padding:0;}
 *{text-decoration: none; outline: none; border: 0;font-family: "popins"; list-style: none;}
+button:focus{border: 0; outline: 0;}
 a:hover{text-decoration: none; outline: none; border: 0; color: inherit;}
 button{cursor: pointer;}
 /*default Css End Here*/
@@ -70,9 +71,10 @@ button{cursor: pointer;}
 
 
 /* .commonSection */
-.commonSection .absolutediv{right: 0; width: 36%; background: url(../images/overviewbg.png) no-repeat; right: 0; top: 0; bottom: 0; z-index: -1; opacity: 0.2; background-size: cover;}
-.commonSection .smallHeading{font-size: 18px; border-bottom: 2px solid var(--black); width: fit-content; margin-bottom: 15px; font-weight: 600;}
-.commonSection .overviewHeading{font-size: 40px; margin-bottom: 8px;}
+.commonSection .absolutediv{right: 0; width: 36%; background: url(../images/overviewbg.png) no-repeat; right: 0; top: 0; bottom: 0; z-index: -1; opacity: 0.2; background-size: cover; border: 8px solid var(--orange);}
+.commonSection .smallHeading{font-size: 18px; border-bottom: 2px solid var(--black); width: fit-content; margin-bottom: 10px; font-weight: 600; color: var(--black);display: block;}
+.commonSection .overviewHeading{font-size: 40px; margin-bottom: 10px;}
+/* .overview-contaier .overviewbtn */
 
 /*Overview Codes Start From Here*/
 
