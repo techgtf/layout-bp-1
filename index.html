@@ -15,23 +15,29 @@
 
 <body>
     <!---------------- Menu Section Codes Start From Here --------------->
-    <div class="container-fluid AppHeader HeaderFixed">
+    <header class="container-fluid AppHeader">
         <div class="headerflexdiv d-flex align-items-center justify-content-between">
             <a href="#" class="logo">Logo Here</a>
-
             <nav class="AppNavbar d-flex">
-                <a href="#" class="text-capitalize blackonyellow active">Home</a>
-                <a href="#overview" class="text-capitalize blackonyellow">overview</a>
-                <a href="#highlights" class="text-capitalize blackonyellow">highlights</a>
-                <a href="#price-list" class="text-capitalize blackonyellow">price list</a>
-                <a href="#amenities" class="text-capitalize blackonyellow">amenities</a>
-                <a href="#floorplan" class="text-capitalize blackonyellow">floor plan</a>
-                <a href="#location" class="text-capitalize blackonyellow">location</a>
-                <a href="#gallery" class="text-capitalize blackonyellow">gallery</a>
-                <a href="#contact-us" class="text-capitalize blackonyellow">contact us</a>
+                <a href="#" class="text-uppercase blackonyellow active">Home</a>
+                <a href="#overview" class="text-uppercase blackonyellow">overview</a>
+                <a href="#highlights" class="text-uppercase blackonyellow">highlights</a>
+                <a href="#price-list" class="text-uppercase blackonyellow">price list</a>
+                <a href="#amenities" class="text-uppercase blackonyellow">amenities</a>
+                <a href="#floorplan" class="text-uppercase blackonyellow">floor plan</a>
+                <a href="#location" class="text-uppercase blackonyellow">location</a>
+                <a href="#gallery" class="text-uppercase blackonyellow">gallery</a>
+                <a href="#contact-us" class="text-uppercase blackonyellow">contact us</a>
             </nav>
+            <a href="tel:0123456789" class="d-flex align-items-center headrConNo">
+                <img src="assets/images/icons/call.svg" class="callsvg" alt="" style="filter: invert(1);">
+                <p>
+                    <small class="d-block texthelp">Need help</small>
+                    <span class="text">0123456789</span>
+                </p>
+            </div>
         </div>
-    </div>
+    </header>
     <!---------------- Menu Section Codes End From Here --------------->
 
     <!---------------- Slider Section Codes Start From Here --------------->
@@ -44,14 +50,14 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/slider-banner/banner.jpg" alt="First slide">
+                    <img class="d-block w-100" src="assets/images/slider-banner/banner3.jpg" alt="First slide">
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img class="d-block w-100" src="assets/images/slider-banner/banner1.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="assets/images/slider-banner/banner2.jpg" alt="Third slide">
-                </div>
+                </div> -->
             </div>
             <a class="carousel-control-prev" href="#bannerSlider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,7 +99,8 @@
 
         <div class="bannerForm position-absolute">
             <form class="banner_inner">
-                <a class="bannerCoNo" href="tel:0123456789"><img src="assets/images/icons/call.svg" class="callsvg" alt=""> 0123456789</a>
+                <!-- <a class="bannerCoNo fontkdamthmor" href="tel:0123456789"><img src="assets/images/icons/call.svg" class="callsvg" alt=""> 0123456789</a> -->
+                <h2 class="formHeading fontkdamthmor text-uppercase"><img src="assets/images/icons/message.svg" alt=""> Leave A message</h2>
                 <div class="inputbox">
                     <input type="text" placeholder="Name" class="w-100 name">
                 </div>
@@ -117,27 +124,72 @@
     <!---------------- Slider Section Codes End From Here --------------->
 
     <!---------------- Overview Section Codes Start From Here --------------->
-    <div class="container-fluid py-5 commonSection overview-contaier position-relative" id="overview">        
+    <section class="container-fluid overview-contaier position-relative" id="overview">
         <div class="container flexdiv d-flex justify-content-between align-items-center">
             <div class="contentdiv col-md-6">
-                <a href="#overview" class="smallHeading fontkdamthmor text-uppercase">OVERVIEW</a></h3>
-                <h3 class="overviewHeading text-uppercase">DEMO PROPERTIES</h3>
-                <article class="pb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur totam, maxime aliquid blanditiis non incidunt, ut consectetur expedita nesciunt culpa temporibus doloribus, quasi dolorem nostrum eligendi sapiente distinctio. Nulla!</article>
-                <article class="pb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur totam, maxime aliquid blanditiis non incidunt, ut consectetur expedita nesciunt culpa temporibus doloribus, quasi dolorem nostrum eligendi sapiente distinctio. Nulla!</article>
-                <button class="appbtn overviewbtn text-uppercase w-100">Know more</button>
+                <div class="commonbox">
+                    <a href="#overview" class="smallHeading fontkdamthmor text-uppercase">OVERVIEW</a></h3>
+                    <h3 class="headingmain text-capitalize">Demo Properties</h3>
+                    <h4 class="subHeading">Lorem, ipsum dolor sit amet, Gurgaon</h4>
+                </div>
+                <article class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur totam, maxime aliquid blanditiis non incidunt, ut consectetur expedita nesciunt culpa temporibus doloribus, quasi dolorem nostrum eligendi sapiente distinctio. Nulla!</article>
+                <article class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur totam, maxime aliquid blanditiis non incidunt, ut consectetur expedita nesciunt culpa temporibus doloribus, quasi dolorem nostrum eligendi sapiente distinctio. Nulla!</article>
+                <article class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequatur totam, maxime aliquid blanditiis non incidunt, ut consectetur expedita nesciunt culpa temporibus doloribus, quasi dolorem nostrum eligendi sapiente distinctio. Nulla!</article>
+                <button class="appbtn overviewbtn text-uppercase w-50">Know more</button>
             </div>
             <div class="imgdiv col-md-6">
                 <img src="assets/images/overview.jpg" alt="">
             </div>
         </div>        
-        <div class="absolutediv position-absolute"></div>
-    </div>
+    </section>
     <!---------------- Overview Section Codes End From Here --------------->
     
     <!---------------- Highlights Section Codes Start From Here --------------->
-    <div class="container-fluid highlights-container" id="highlights">
-        
-    </div>
+    <section class="container-fluid highlights-container position-relative" id="highlights">
+        <div class="container">
+            <div class="flexdiv d-flex align-items-center justify-content-between">
+                <div class="overview_inner col-md-7">
+                    <div class="flexpoint row justify-content-center">
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                        
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                        <div class="points_inner d-flex align-items-center">
+                            <span class="num d-block">01</span>
+                            <p>Lorem ipsum dolor sit amet consectetur elit.</p>
+                        </div>
+                    </div>
+                    <div class="avtardiv m-auto">
+                        <img src="assets/images/highlight.jpg" alt="">
+                    </div>
+                </div>
+                <div class="commonbox col-5">
+                    <a href="#highlights" class="smallHeading fontkdamthmor text-uppercase">highlights</a></h3>
+                    <h4 class="headingmain text-capitalize">Demo Properties </h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex iusto fugiat expedita eum? Quo temporibus at adipisci reprehenderit quae veniam saepe cum.</p>
+                    <a href="tel:0123456789" class="d-block phno fontkdamthmor"><img src="assets/images/icons/telephone.svg" alt=""> 8123456789</a>
+                    <button class="appbtn w-50 btnknow text-uppercase">Know More</button>
+                </div>                
+            </div>
+        </div>
+    </section>
     <!---------------- Highlights Section Codes End From Here --------------->
 
     <!---------------- Price List Section Codes Start From Here --------------->
@@ -163,11 +215,23 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
-    <!-- header Fixed script -->
+    <!-- header script -->
     <script>
-
+        
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+            if (scroll >= 70) {
+                $(".AppHeader").addClass("HeaderFixed");
+            } else {
+                $(".AppHeader").removeClass("HeaderFixed");
+            }
+        });
+        // let ele = $('.AppNavbar a');
+        // ele.click((e)=>{     
+        //     $(this).addClass('active').siblings().removeClass('active');                   
+        // });
     </script>
-    <!-- header Fixed script -->
+    <!-- header script -->
 
     <script type="text/javascript" language="javascript">
         var versionUpdate = (new Date()).getTime();
@@ -176,6 +240,8 @@
         script.src = "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" + versionUpdate;
         document.body.appendChild(script);
     </script>
+
+
     <script>
         var AgentInfo = {
             "vAgentID": "",
