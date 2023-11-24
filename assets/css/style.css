@@ -3,7 +3,7 @@
 @font-face {font-family: "popins_bold";font-display: swap;src: url("../fonts/popins/Poppins-SemiBold.ttf");}
 @font-face {font-family: "kdamthmor";font-display: swap;src: url("../fonts/kdamthmor/KdamThmorPro-Regular.ttf");}
 
-:root{--black:#212429;--black_1:#292929; --white:#fff;--gold:#b98e75; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10)}
+:root{--black:#212429;--black_1:#292929; --white:#fff;--gold:#b98e75; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
 /*default Css Start Here*/
 html{scroll-behavior: smooth;}
 body, p, h1, h2, h3, h4, h5, h6, ul, li{margin:0px;padding:0;}
@@ -18,7 +18,7 @@ button{cursor: pointer;}
 /* custom classes */
 .blackonyellow{font-family: 'popins_bold'; letter-spacing: 1px; color: var(--black);}
 .fontkdamthmor{font-family: 'kdamthmor'; letter-spacing: 4px;}
-.appbtn{background: var(--black); z-index: 1;font-family: 'popins_bold';letter-spacing: 1px;color: var(--white);padding: 8px 10px;display: inline-block;transition: var(--transition);position: relative;}
+.appbtn{background: var(--black); z-index: 1;font-family: 'popins_bold';letter-spacing: 1px;color: var(--white);padding: 15px 10px;display: inline-block;transition: var(--transition);position: relative;}
 .appbtn:hover{background: var(--black_1);}
 .appbtn::after{content: '';z-index: -1;position: absolute;left: 0;top: 0;bottom: 0;clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);background: var(--gold);height: 100%;width: 13%;}
 /* custom classes */
@@ -46,7 +46,7 @@ button{cursor: pointer;}
 .bannerSlider .carousel-indicators li{cursor: pointer;}
 
 /* .bannerContentdiv */
-.bannerContentdiv{bottom: 0;z-index: 1;left: 0;width: 40%;clip-path: polygon(0% 52%, 76% 52%, 100% 100%, 0% 100%);background: var(--black);height: 100%;display: grid;align-items: end;}
+.bannerContentdiv{bottom: 0;z-index: 1;left: 0;width: 40%;clip-path: polygon(0% 50%, 77% 50%, 100% 100%, 0% 100%);background: var(--black);height: 100%;display: grid;align-items: end;}
 .bannerContentdiv .projectname, .startingPrice, .bannerHighlights{padding:17px 0 15px 30px;}
 .bannerContentdiv .projectname, .startingPrice{background: var(--black);}
 .bannerContentdiv .bannerHighlights{background: var(--gold);}
@@ -66,7 +66,7 @@ button{cursor: pointer;}
 .bannerForm .email{background-image: url(../images/icons/email.svg);}
 .bannerForm .phoneno{background-image: url(../images/icons/telephone.svg);}
 .bannerForm .message{background-image: url(../images/icons/chat.svg); }
-.bannerForm .bannerbtn{padding: 10px;margin-top: 8px;text-transform: uppercase;background: #fff;color: #000;}
+.bannerForm .bannerbtn{margin-top: 8px;text-transform: uppercase;background: #fff;color: #000;}
 
 
 /* checkbox-section */
@@ -79,17 +79,18 @@ button{cursor: pointer;}
 /*Slider And From Codes End From Here*/
 
 /* .commonbox */
-.commonbox .smallHeading{font-size: 16px;border-bottom: 2px solid var(--gold);width: fit-content;margin-bottom: 20px;font-weight: 600;color: var(--gold);display: block;}
-.commonbox .headingmain{font-size: 45px;margin-bottom: 20px;color: var(--black);font-family: 'kdamthmor';letter-spacing: 2px;}
-.commonbox .subHeading{font-size: 25px;margin-bottom: 20px;font-weight: 500;}
+.commonbox .smallHeading{font-size: 15px;width: fit-content;margin-bottom: 15px;font-weight: 600;color: var(--gold);display: block; position: relative;}
+.commonbox .smallHeading::after{content: '';position: absolute;left: 105%;width: 73px;height: 2px;top: 50%;transform: translate(0, -50%);background: var(--gold);}
+.commonbox .headingmain{font-size: 45px;margin-bottom: 15px;color: var(--black);font-family: 'kdamthmor';letter-spacing: 2px;}
+.commonbox .subHeading{font-size: 25px;margin-bottom: 15px;font-weight: 500;}
 /* .commonbox.centerdiv{} */
 /* end .commonbox */
 
 /*Overview Codes Start From Here*/
-.overview-contaier{padding-top: 100px;padding-bottom: 100px;}
+.overview-contaier{padding-top: 100px;padding-bottom: 100px; background: url(../images/icons/vertical-grid-line.png);}
 .overview-contaier .flexdiv{gap: 0 70px;}
 .overview-contaier .flexdiv::after{content: '';position: absolute; width: 50%; background: url(../images/vectorbg.png) no-repeat; right: 0; top: 0; bottom: 0; z-index: -1; opacity: 0.1; background-size: cover;}
-.overview-contaier .desc{padding-bottom: 23px;}
+.overview-contaier .desc{padding-bottom: 15px; letter-spacing: 0.5px;}
 .overview-contaier .overviewbtn{padding: 18px 0; width: 40%; margin-top: 15px;}
 .overview-contaier .overviewbtn:hover svg{fill: red;}
 .overview-contaier .imgdiv{position: relative;}
@@ -108,13 +109,24 @@ button{cursor: pointer;}
 .highlights-container .commonbox .smallHeading{margin-left: auto; margin-right: auto;}
 .highlights-container .headingmain{color: var(--white);}
 .highlights-container .flexdiv{display: grid;grid-template-columns: repeat( 4, 350px);gap: 82px 45px;}
-.highlights-container .boxes{background: var(--black);padding: 0 25px;height: 180px;}
+.highlights-container .boxes{background: var(--black);padding: 0 25px;height: 180px; position: relative;}
+.highlights-container .boxes::after{content: ''; position: absolute; left: 0; bottom: 0; clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%); background: var(--gold); height: 60px; width: 46px;}
 .highlights-container .boxes .number{font-size: 38px;position: relative;transition: var(--transition);width: fit-content;margin: 0 auto;margin-top: -30px;padding: 0 10px;background: var(--gold);}
 .highlights-container .boxes p{height: 78%;font-size: 16px;}
 /*Highlights Codes End From Here*/
 
 /*Price List Codes Start From Here*/
-
+.pricelist-container{padding: 100px 0; background: var(--white) url(../images/icons/vertical-grid-line.png);}
+.pricelist-container .flexbox{text-align: center; margin-top: 50px;}
+.pricelist-container .pricecard{width: 20%; background: var(--black); color: var(--white); transition: var(--transition); padding: 45px 20px; border: 10px solid var(--gold); transform: scale(1.1); position: relative;} 
+.pricelist-container .pricecard:hover{background: var(--black_1); transform: scale(1.2);box-shadow: var(--shadow_1); z-index: 1;} 
+.pricelist-container .pricecard:nth-child(even){background: var(--black_1);}
+.pricelist-container .priceTotal{height: 111px;width: 111px;background: var(--gold);font-size: 29px; flex-direction: column; margin: 15px auto; padding-top: 15px; position: relative;}
+.pricelist-container .priceTotal::after{content: '';position: absolute; left: 0; bottom: 0; height: 60px; width: 45px; background: var(--white); clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);}
+.pricelist-container .pricetype{color: var(--black);}
+.pricelist-container .title{font-size: 16px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px;}
+.pricelist-container .startprice{color: var(--gold);}
+.pricelist-container .Type{font-size: 20px; margin-bottom: 8px; color: var(--gold);}
 /*Price List Codes End From Here*/
 
 /*Amenities Codes Start From Here*/
@@ -174,6 +186,8 @@ button{cursor: pointer;}
 }
 
 @keyframes textColor {    
-    50%{color: var(--gold);}
-       
+    50%{color: var(--gold);}      
+}
+@keyframes textColor1 {       
+    100%{color: var(--white);}      
 }
