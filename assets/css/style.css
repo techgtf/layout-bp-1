@@ -18,9 +18,9 @@ button{cursor: pointer;}
 /* custom classes */
 .blackonyellow{font-family: 'popins_bold'; letter-spacing: 1px; color: var(--black);}
 .fontkdamthmor{font-family: 'kdamthmor'; letter-spacing: 4px;}
-.appbtn{background: var(--gold); z-index: 1;font-family: 'popins_bold';letter-spacing: 1px;color: var(--black);padding: 8px 10px;display: inline-block;transition: var(--transition);position: relative;}
-.appbtn:hover{background: var(--gold_1);}
-.appbtn::after{content: '';z-index: -1;position: absolute;left: 0;top: 0;bottom: 0;clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);background: var(--black);height: 100%;width: 13%;}
+.appbtn{background: var(--black); z-index: 1;font-family: 'popins_bold';letter-spacing: 1px;color: var(--white);padding: 8px 10px;display: inline-block;transition: var(--transition);position: relative;}
+.appbtn:hover{background: var(--black_1);}
+.appbtn::after{content: '';z-index: -1;position: absolute;left: 0;top: 0;bottom: 0;clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);background: var(--gold);height: 100%;width: 13%;}
 /* custom classes */
 
 /*Navbar Codes Start From Here*/
@@ -58,15 +58,15 @@ button{cursor: pointer;}
 .bannerContentdiv .TypoHeading{font-size: 25px;font-weight: 600;margin-bottom: 16px;}
 
 /* bannerform */
-.bannerForm .formHeading{font-size: 22px; margin-bottom: 14px; letter-spacing: 2px;}
-.bannerForm{right: 0px; bottom: 0px; z-index: 1; padding: 20px; width: 370px; background: #00000080; animation: bannerformmbg 2s infinite;}
-.bannerForm .inputbox{margin-bottom: 8px;}
-.bannerForm input, .bannerForm textarea{padding: 10px; padding-left: 38px; background: var(--white) url(../images/icons/user.svg) no-repeat 10px; background-size: 20px;}
-.bannerForm .name{background-size: 24px;}
+.bannerForm .formHeading{font-size: 20px;margin-bottom: 14px;letter-spacing: 2px;}
+.bannerForm{right: 0px;bottom: 0px;z-index: 1;padding: 20px;width: 340px;background: #00000080;animation: bannerformmbg 2s infinite;}
+.bannerForm .inputbox{margin-bottom: 10px;}
+.bannerForm input, .bannerForm textarea{padding: 10px;padding-left: 38px;background: var(--white) url(../images/icons/user.svg) no-repeat 10px;background-size: 18px;font-size: 15px;}
+.bannerForm .name{background-size: 20px;}
 .bannerForm .email{background-image: url(../images/icons/email.svg);}
 .bannerForm .phoneno{background-image: url(../images/icons/telephone.svg);}
 .bannerForm .message{background-image: url(../images/icons/chat.svg); }
-.bannerForm .bannerbtn{padding: 10px; margin-top: 8px; text-transform: uppercase;}
+.bannerForm .bannerbtn{padding: 10px;margin-top: 8px;text-transform: uppercase;background: #fff;color: #000;}
 
 
 /* checkbox-section */
@@ -90,7 +90,8 @@ button{cursor: pointer;}
 .overview-contaier .flexdiv{gap: 0 70px;}
 .overview-contaier .flexdiv::after{content: '';position: absolute; width: 50%; background: url(../images/vectorbg.png) no-repeat; right: 0; top: 0; bottom: 0; z-index: -1; opacity: 0.1; background-size: cover;}
 .overview-contaier .desc{padding-bottom: 23px;}
-.overview-contaier .overviewbtn{padding: 10px 0;}
+.overview-contaier .overviewbtn{padding: 18px 0; width: 40%; margin-top: 15px;}
+.overview-contaier .overviewbtn:hover svg{fill: red;}
 .overview-contaier .imgdiv{position: relative;}
 .overview-contaier .imgdiv::after{content: '';position: absolute;right: 7%;top: 5%;height: 21%;width: 21%;background: url(http://gtftech.co.in/n-layout-13/images/dot-shape.png);z-index: -1;}
 .overview-contaier .topimg{box-shadow: var(--shadow);}
