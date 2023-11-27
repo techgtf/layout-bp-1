@@ -94,7 +94,7 @@ button{cursor: pointer;}
 .overview-contaier .overviewbtn{padding: 18px 0; width: 40%; margin-top: 15px;}
 .overview-contaier .overviewbtn:hover svg{fill: red;}
 .overview-contaier .imgdiv{position: relative;}
-.overview-contaier .imgdiv::after{content: '';position: absolute;right: 7%;top: 5%;height: 21%;width: 21%;background: url(http://gtftech.co.in/n-layout-13/images/dot-shape.png);z-index: -1;}
+.overview-contaier .imgdiv::after{content: '';position: absolute;right: 7%;top: 5%;height: 21%;width: 21%;background: url(../images/icons/vectorimg.png);z-index: -1;}
 .overview-contaier .topimg{box-shadow: var(--shadow);}
 .overview-contaier .bottomimg{position: absolute;right: 5%;top: 26%;border: 15px solid var(--white);box-shadow: var(--shadow);}
 .overview-contaier .yrExpdiv{box-shadow: var(--shadow);margin-top: 30px;height: 141px;width: 184px;background: var(--white);box-shadow: 0px 4px 63px 0px rgba(15, 28, 51, 0.10);flex-direction: column;}
