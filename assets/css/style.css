@@ -116,22 +116,25 @@ button{cursor: pointer;}
 /*Highlights Codes End From Here*/
 
 /*Price List Codes Start From Here*/
-.pricelist-container{padding: 100px 0; background: var(--white) url(../images/icons/vertical-grid-line.png);}
-.pricelist-container .flexbox{text-align: center; margin-top: 50px;}
-.pricelist-container .pricecard{width: 20%; background: var(--black); color: var(--white); transition: var(--transition); padding: 45px 20px; border: 10px solid var(--gold); transform: scale(1.1); position: relative;} 
-.pricelist-container .pricecard:hover{background: var(--black_1); transform: scale(1.2);box-shadow: var(--shadow_1); z-index: 1;} 
-.pricelist-container .pricecard:nth-child(even){background: var(--black_1);}
-.pricelist-container .priceTotal{height: 111px;width: 111px;background: var(--gold);font-size: 29px; flex-direction: column; margin: 15px auto; padding-top: 15px; position: relative;}
-.pricelist-container .priceTotal::after{content: '';position: absolute; left: 0; bottom: 0; height: 60px; width: 45px; background: var(--white); clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);}
-.pricelist-container .pricetype{color: var(--black);}
+.pricelist-container{padding: 100px 0; background: var(--white) url(../images/icons/pricelistbg.png);}
+.pricelist-container .commonbox .headingmain{margin-top: 15px;}
+.pricelist-container .flexbox{text-align: center; margin-top: 90px; gap: 85px;}
+.pricelist-container .pricecard{width: 20%; background: var(--white); color: var(--black); transition: var(--transition); padding: 28px 20px; position: relative; transform: scale(1.1); border: 1px solid var(--gray); box-shadow: var(--shadow); } 
+/* .pricelist-container .pricecard:nth-child(even){background: var(--gray);} */
+.pricelist-container .priceTotal{height: 108px;width: 128px;background: var(--gold);color: var(--white);font-size: 29px;flex-direction: column;margin: 15px auto;padding-top: 15px;position: relative;}
+.pricelist-container .priceTotal::after{content: '';position: absolute;left: 0;bottom: 0;height: 36px;width: 27px;background: var(--white);clip-path: polygon(0% 36%, 94% 95%, 100% 100%, 0% 100%);}
+.pricelist-container .pricetype{color: var(--white);}
 .pricelist-container .title{font-size: 16px; text-transform: uppercase; font-weight: 600; margin-bottom: 15px;}
 .pricelist-container .startprice{color: var(--gold);}
 .pricelist-container .Type{font-size: 20px; margin-bottom: 8px; color: var(--gold);}
+.pricelist-container .intestedbtn{width: 100%; margin-top: 15px; padding: 11px; text-transform: uppercase;}
 /*Price List Codes End From Here*/
 
 /*Amenities Codes Start From Here*/
 
 /*Amenities Codes End From Here*/
+.amenities-container{padding: 100px 0; background: var(--gray);}
+.amenities-container .commonbox .headingmain{margin-top: 15px;}
 
 /*Floor And Master Plan Codes Start From Here*/
 
