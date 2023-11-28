@@ -137,7 +137,7 @@ button{cursor: pointer;}
 .amenities-container{padding:0 15px 100px 15px;}
 .amenities-container .commonbox .headingmain{margin-top: 15px;}
 .amenities-container .leftsection{gap: 0 15px; position: relative; width: 45%;}
-.amenities-container .rightsection{width: 54%; background: url(https://gaviaspreview.com/wp/boliin/wp-content/uploads/2023/02/bg-05.jpg); padding:25px 15px;}
+.amenities-container .rightsection{width: 54%; background: url(../images/amenities/bg-ameniteis.jpg) no-repeat; background-size: cover; padding:25px 15px;}
 .amenities-container .rigtsideimgs{flex-direction: column; gap: 15px 0;}
 .amenities-container .leftsection .textheading{font-size: 28px;letter-spacing: 1px;}
 .amenities-container .rigtsideimgs img{height: 60%; object-fit: cover;}
