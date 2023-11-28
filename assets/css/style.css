@@ -2,6 +2,7 @@
 @font-face {font-family: "popins";font-display: swap;src: url("../fonts/popins/Poppins-Regular.ttf");}
 @font-face {font-family: "popins_bold";font-display: swap;src: url("../fonts/popins/Poppins-SemiBold.ttf");}
 @font-face {font-family: "kdamthmor";font-display: swap;src: url("../fonts/kdamthmor/KdamThmorPro-Regular.ttf");}
+img{max-width: 100%;}
 
 :root{--black:#212429;--black_1:#292929; --white:#fff;--gold:#b98e75; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
 /*default Css Start Here*/
@@ -116,7 +117,7 @@ button{cursor: pointer;}
 /*Highlights Codes End From Here*/
 
 /*Price List Codes Start From Here*/
-.pricelist-container{padding: 100px 0; background: var(--white) url(../images/icons/pricelistbg.png);}
+.pricelist-container{padding: 100px 0 150px 0; background: var(--white) url(../images/icons/pricelistbg.png);}
 .pricelist-container .commonbox .headingmain{margin-top: 15px;}
 .pricelist-container .flexbox{text-align: center; margin-top: 90px; gap: 85px;}
 .pricelist-container .pricecard{width: 20%; background: var(--white); color: var(--black); transition: var(--transition); padding: 28px 20px; position: relative; transform: scale(1.1); border: 1px solid var(--gray); box-shadow: var(--shadow); } 
@@ -133,8 +134,17 @@ button{cursor: pointer;}
 /*Amenities Codes Start From Here*/
 
 /*Amenities Codes End From Here*/
-.amenities-container{padding: 100px 0; background: var(--gray);}
+.amenities-container{padding:0 15px 100px 15px;}
 .amenities-container .commonbox .headingmain{margin-top: 15px;}
+.amenities-container .leftsection{gap: 0 15px; position: relative; width: 45%;}
+.amenities-container .rightsection{width: 54%; background: url(https://gaviaspreview.com/wp/boliin/wp-content/uploads/2023/02/bg-05.jpg); padding:25px 15px;}
+.amenities-container .rigtsideimgs{flex-direction: column; gap: 15px 0;}
+.amenities-container .leftsection .textheading{font-size: 28px;letter-spacing: 1px;}
+.amenities-container .rigtsideimgs img{height: 60%; object-fit: cover;}
+.amenities-container .rigtsideimgs .contentbox{background: var(--gold); height: 35%; padding: 45px 25px 15px 55px;}
+.amenities-container .rigtsideimgs .contentbox .appbtn{position: absolute; bottom: 17px; right: 0; width: 40%;}
+.amenities-container .rigtsideimgs .contentbox .appbtn::after{background: var(--white);}
+.amenities-container .roundedbox{position: absolute; z-index: 1;top: 47%;left: 39%;}
 
 /*Floor And Master Plan Codes Start From Here*/
 
