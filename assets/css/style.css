@@ -3,8 +3,9 @@
 @font-face {font-family: "popins_bold";font-display: swap;src: url("../fonts/popins/Poppins-SemiBold.ttf");}
 @font-face {font-family: "kdamthmor";font-display: swap;src: url("../fonts/kdamthmor/KdamThmorPro-Regular.ttf");}
 img{max-width: 100%;}
+figure{margin: 0;}
 
-:root{--black:#212429;--black_1:#292929; --white:#fff;--gold:#b98e75; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
+:root{--black:#212429;--black_1:#292929; --white:#fff;--gold-old:#b98e75; --gold:#e85f4c; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
 /*default Css Start Here*/
 html{scroll-behavior: smooth;}
 body, p, h1, h2, h3, h4, h5, h6, ul, li{margin:0px;padding:0;}
@@ -17,7 +18,7 @@ button{cursor: pointer;}
 .container{max-width: 80%;}
 
 /* custom classes */
-.blackonyellow{font-family: 'popins_bold'; letter-spacing: 1px; color: var(--black);}
+.blackonyellow{font-family: 'popins_bold'; letter-spacing: 1px; color: var(--white);}
 .fontkdamthmor{font-family: 'kdamthmor'; letter-spacing: 4px;}
 .appbtn{background: var(--black); z-index: 1;font-family: 'popins_bold';letter-spacing: 1px;color: var(--white);padding: 15px 10px;display: inline-block;transition: var(--transition);position: relative;}
 .appbtn:hover{background: var(--black_1);}
@@ -135,16 +136,26 @@ button{cursor: pointer;}
 
 /*Amenities Codes End From Here*/
 .amenities-container{padding:0 15px 100px 15px;}
-.amenities-container .commonbox .headingmain{margin-top: 15px;}
+.amenities-container .commonbox{margin-bottom: 40px;}
+.amenities-container .commonbox .headingmain{margin-top: 15px; font-size: 40px;}
 .amenities-container .leftsection{gap: 0 15px; position: relative; width: 45%;}
-.amenities-container .rightsection{width: 54%; background: url(../images/amenities/bg-ameniteis.jpg) no-repeat; background-size: cover; padding:25px 15px;}
+.amenities-container .rightsection{width: 54%;background: url(../images/amenities/bg-ameniteis.jpg) no-repeat;background-size: cover;padding: 60px 0 0 60px;}
 .amenities-container .rigtsideimgs{flex-direction: column; gap: 15px 0;}
-.amenities-container .leftsection .textheading{font-size: 28px;letter-spacing: 1px;}
+.amenities-container .leftsection .textheading{font-size: 28px;letter-spacing: 1px; color: var(--white);}
 .amenities-container .rigtsideimgs img{height: 60%; object-fit: cover;}
-.amenities-container .rigtsideimgs .contentbox{background: var(--gold); height: 35%; padding: 45px 25px 15px 55px;}
+.amenities-container .rigtsideimgs .contentbox{background: var(--gold) url(../images/amenities/bg-shape-02.png); background-position: 9px 6px; height: 38%; padding: 45px 25px 15px 55px;}
 .amenities-container .rigtsideimgs .contentbox .appbtn{position: absolute; bottom: 17px; right: 0; width: 40%;}
 .amenities-container .rigtsideimgs .contentbox .appbtn::after{background: var(--white);}
 .amenities-container .roundedbox{position: absolute; z-index: 1;top: 47%;left: 39%;}
+.amenities-container .icondiv{flex-wrap: wrap;gap: 35px;}
+.amenities-container .boxinner {background: var(--white);padding: 15px;box-shadow: var(--shadow);position: relative;z-index: 1;overflow: hidden;}
+.amenities-container .blurbg{position: absolute;right: 3px;z-index: 1;bottom: -14%;opacity: 0.1;height: 95px;width: 74px;background-size: contain;filter: brightness(0);background-repeat: no-repeat;}
+.amenities-container .boxinner .amname{font-size: 17px;font-weight: 600;}
+.amenities-container .icondiv figure{padding: 15px;border:2px solid var(--gold);width: fit-content;margin-bottom: 15px;}
+.amenities-container .icondiv figcaption{top: 15px;right: -13px;background: var(--gold);color: var(--white);height: 21px;width: 21px;text-align: center;font-size: 13px;}
+.amenities-container .icondiv img{width: 50px;}
+
+
 
 /*Floor And Master Plan Codes Start From Here*/
 
@@ -172,6 +183,38 @@ button{cursor: pointer;}
 	
 }
 
+@media(max-width: 991px){
+	
+}
+
+@media(max-width: 768px){
+	
+}
+
+@media(max-width: 320px){
+	
+}
+
+
+/* Keyframes */
+@keyframes bannerformmbg {
+    0%{background: #00000080;}
+    50%{background: #110f0733;}
+    100%{background: #00000080;}
+}
+
+@keyframes rotateSvg {
+    0%{rotate: 10deg;}
+    50%{rotate: -5deg;}
+    100%{rotate: 10deg;}    
+}
+
+@keyframes textColor {    
+    50%{color: var(--gold);}      
+}
+@keyframes textColor1 {       
+    100%{color: var(--white);}      
+}
 @media(max-width: 991px){
 	
 }
