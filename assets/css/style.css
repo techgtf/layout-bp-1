@@ -156,8 +156,14 @@ button{cursor: pointer;}
 .amenities-container .icondiv img{width: 50px;}
 
 
-
 /*Floor And Master Plan Codes Start From Here*/
+.floorplan-container{padding: 100px 30px; background: var(--black) url(../images/icons/vertical-grid-line.png); color: var(--white);}
+.floorplan-container .floorplan_inner{gap: 40px 50px; width: 100%; padding: 50px 0 0 100px; flex-wrap: wrap;}
+.floorplan-container .floorplan_inner .contentbox{width: 31%;} 
+.floorplan-container .floorplan_inner .imglink{display: inline-block;padding: 73px 5px 0 5px;background-image: linear-gradient(180deg, #060505, #484848);} 
+.floorplan-container .floorplan_inner .f-img{object-fit: cover;} 
+.floorplan-container .planname{font-size: 70px;position: relative;bottom: 67px;left: -21px; color: var(--gold);}
+
 
 /*Floor And Master Plan Codes End From Here*/
 
