@@ -2,10 +2,20 @@
 @font-face {font-family: "popins";font-display: swap;src: url("../fonts/popins/Poppins-Regular.ttf");}
 @font-face {font-family: "popins_bold";font-display: swap;src: url("../fonts/popins/Poppins-SemiBold.ttf");}
 @font-face {font-family: "kdamthmor";font-display: swap;src: url("../fonts/kdamthmor/KdamThmorPro-Regular.ttf");}
+:root{--black:#212429;--black_1:#292929; --white:#fff;--gold-old:#b98e75; --gold:#e85f4c; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
 img{max-width: 100%;}
 figure{margin: 0;}
+body {scrollbar-width: auto;scrollbar-color: var(--gold) #ffffff;}
+body::-webkit-scrollbar {width: 20px;}
+body::-webkit-scrollbar-track {background: var(--black);}
+body::-webkit-scrollbar-thumb {background-color: var(--gold);border-radius: 2px;border: 5px solid transparent;}
 
-:root{--black:#212429;--black_1:#292929; --white:#fff;--gold-old:#b98e75; --gold:#e85f4c; --gold_1:#976e57; --gray:#f5f5f5; --sky:#c3d6dc; --transition: all 0.4s ease-in-out; --shadow:0px 4px 63px 0px rgba(15, 28, 51, 0.10); --shadow_1:0 10px 20px rgb(24 19 19 / 19%), 0 6px 6px rgb(0 0 0 / 23%);}
+/* custom modal */
+.modal-opner{cursor: pointer; border: 10px solid var(--white); border-left: 0; display: block;}
+.CutomModal{z-index: 999; background: var(--black); position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; transition: all 0.8s ease-in-out; transform: scale(0);}
+.CutomModal.visible{visibility: visible; transform: scale(1); top: 0;}
+
+
 /*default Css Start Here*/
 html{scroll-behavior: smooth;}
 body, p, h1, h2, h3, h4, h5, h6, ul, li{margin:0px;padding:0;}
@@ -27,7 +37,7 @@ button{cursor: pointer;}
 
 /*Navbar Codes Start From Here*/
 /* .AppHeader{} */
-.AppHeader{position: fixed; left: 0; right: 0; top: 0; z-index: 99; background: #212429bf; transition: var(--transition);}
+.AppHeader{position: fixed; left: 0; right: 0; top: 0; z-index: 9; background: #212429bf; transition: var(--transition);}
 .HeaderFixed{background: var(--black);}
 .logodiv{z-index: 1; padding: 14px 10px;}
 .logo{font-size: 38px; color: var(--white);}
@@ -132,10 +142,23 @@ button{cursor: pointer;}
 .pricelist-container .intestedbtn{width: 100%; margin-top: 15px; padding: 11px; text-transform: uppercase;}
 /*Price List Codes End From Here*/
 
-/*Amenities Codes Start From Here*/
 
-/*Amenities Codes End From Here*/
-.amenities-container{padding:0 15px 100px 15px;}
+/*Floor And Master Plan Codes Start From Here*/
+.floorplan-container{padding: 100px 30px; background: var(--black_1) url(../images/icons/vertical-grid-line.png); color: var(--white);}
+.floorplan-container .floorplan_inner{gap: 40px 50px; width: 100%; padding: 50px 0 0 100px; white-space: nowrap;overflow:auto hidden;}
+.floorplan-container .floorplan_inner {scrollbar-width: auto;scrollbar-color: var(--black_1) #ffffff;}
+.floorplan-container .floorplan_inner::-webkit-scrollbar {width: 20px; height: 30px;}
+.floorplan-container .floorplan_inner::-webkit-scrollbar-track {background: var(--gold);}
+.floorplan-container .floorplan_inner::-webkit-scrollbar-thumb {background: var(--black) url(../images/gif/next.gif) no-repeat 99%; background-size: 35px;border: 1px solid var(--gray);}
+.floorplan-container .floorplan_inner .contentbox{width: 31%; flex: 0 0 31%; position: relative;} 
+.floorplan-container .floorplan_inner .imglink{display: inline-block;padding: 43px 30px 66px 33px;background-image: linear-gradient(180deg, #6c6c6c26, #00000014);} 
+.floorplan-container .floorplan_inner .f-img{object-fit: cover;} 
+.floorplan-container .planname{font-size: 70px;position: absolute;bottom: 13px;left: -37px;color: var(--gold);}
+.floorplan-container .pera{font-size: 25px;text-align: center;margin-bottom: 35px; color: var(--white);}
+/*Floor And Master Plan Codes End From Here*/
+
+/*Amenities Codes Start From Here*/
+.amenities-container{padding:150px 15px 100px 15px;}
 .amenities-container .commonbox{margin-bottom: 40px;}
 .amenities-container .commonbox .headingmain{margin-top: 15px; font-size: 40px;}
 .amenities-container .leftsection{gap: 0 15px; position: relative; width: 45%;}
@@ -154,22 +177,23 @@ button{cursor: pointer;}
 .amenities-container .icondiv figure{padding: 15px;border:2px solid var(--gold);width: fit-content;margin-bottom: 15px;}
 .amenities-container .icondiv figcaption{top: 15px;right: -13px;background: var(--gold);color: var(--white);height: 21px;width: 21px;text-align: center;font-size: 13px;}
 .amenities-container .icondiv img{width: 50px;}
-
-
-/*Floor And Master Plan Codes Start From Here*/
-.floorplan-container{padding: 100px 30px; background: var(--black) url(../images/icons/vertical-grid-line.png); color: var(--white);}
-.floorplan-container .floorplan_inner{gap: 40px 50px; width: 100%; padding: 50px 0 0 100px; flex-wrap: wrap;}
-.floorplan-container .floorplan_inner .contentbox{width: 31%;} 
-.floorplan-container .floorplan_inner .imglink{display: inline-block;padding: 73px 5px 0 5px;background-image: linear-gradient(180deg, #060505, #484848);} 
-.floorplan-container .floorplan_inner .f-img{object-fit: cover;} 
-.floorplan-container .planname{font-size: 70px;position: relative;bottom: 67px;left: -21px; color: var(--gold);}
-
-
-/*Floor And Master Plan Codes End From Here*/
+/*Amenities Codes End From Here*/
 
 /*Location Codes Start From Here*/
+.location-container{padding: 100px 0; background: var(--black_1); position: relative; color: var(--white);}
+.location-container .headingmain{margin: 28px 0 24px 0;}
+.location-container .flexlocation .imgdiv{position: absolute; right: 0; top: 0; bottom: 0;}
+.location-container .imgdiv img{width: 100%; object-fit: cover; height: 605px;}
+.location-container .locationList .listitem{padding: 10px 0 10px 45px; background: url(../images/icons/arrow1.svg) no-repeat center left;background-size: 23px;}
 
 /*Location Codes End From Here*/
+.gallery-container{padding: 100px; background: url(../images/gallery/gallery-bg.jpg) no-repeat center / cover; margin: 100px 0;position: relative;}
+.gallery-container::after{content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0;height: 100%;width: 100%; background: #212429a8; opacity: 0.9; z-index: 1;}
+.gallery-container .flexdiv{position: relative; z-index: 9;}
+.gallery-container .modal-opner{cursor: pointer; border: 10px solid var(--white); border-left: 0; display: block;}
+.gallery-container  .modaldiv:nth-child(1) {border-left: 10px solid #fff!important;}
+.gallery-container .galleryimages{display: flex; flex-wrap: nowrap;}
+
 
 /*Gallery Codes Start From Here*/
 
